@@ -1,10 +1,12 @@
 import os
 
-from django.contrib.auth.models import User
 from django.db import models
 from django.template.defaultfilters import date, time
 from django.db.models.signals import post_save, pre_delete
 from django.dispatch import receiver
+from django.contrib.auth import get_user_model
+User=get_user_model()
+
 
 from notification.models import NoticeType, create_notice_type, send
 from orderable.models import Orderable

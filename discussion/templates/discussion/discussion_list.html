@@ -9,7 +9,7 @@
     <h2>Discussions</h2>
     <ul class="discussion-list">
         {% for obj in object_list %}
-            <li><a href="{% url discussion slug=obj.slug %}">{{ obj }}</a></li>
+            <li><a href="{% url 'discussion' slug=obj.slug %}">{{ obj }}</a></li>
         {% endfor %}
     </ul>
 {% endblock %}

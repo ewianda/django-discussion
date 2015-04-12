@@ -1,6 +1,5 @@
-from django.conf.urls.defaults import *
 from django.views.generic import RedirectView
-
+from django.conf.urls import patterns, include, url
 from discussion.views import (DiscussionList, DiscussionView,
                               CreatePost, PostView, Search)
 
